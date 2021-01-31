@@ -12,10 +12,10 @@ public class Calculator_40 {
     }
 
     public void computation(int number){
-        int p= 2;
+        int defaultValue= 2;
         for(int i=1; i<number; i++  ){
-            p *= 2;
-            System.out.println(p);
+            defaultValue *= 2;
+            System.out.println(defaultValue);
         }
     }
 }
