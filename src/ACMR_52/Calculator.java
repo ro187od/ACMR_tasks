@@ -6,6 +6,8 @@ import java.util.Arrays;
 public class Calculator {
     private static Calculator instanceCal;
 
+    private Calculator(){}
+
     public static Calculator getInstanceCal(){
         if(instanceCal == null){
             instanceCal = new Calculator();
