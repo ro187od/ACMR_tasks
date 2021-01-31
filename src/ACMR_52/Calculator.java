@@ -17,10 +17,11 @@ public class Calculator {
         char[] array  = splitTheArray(ticket);
         char[] Array1 = Arrays.copyOfRange(array, 0, array.length/2);
         char[] Array2 = Arrays.copyOfRange(array, array.length/2, array.length);
-        int sum_1 = sum(Array1);
-        int sum_2 = sum(Array2);
-        if (sum_1==sum_2){
+        int sumLeftHalfTicket = sumHalfTicket(Array1);
+        int sumRightHalfTicket = sumHalfTicket(Array2);
+        if (sumLeftHalfTicket==sumRightHalfTicket){
             System.out.println("Yes");
+
         }
         else{
             System.out.println("NO");
@@ -28,7 +29,7 @@ public class Calculator {
         }
     }
 
-    private int sum(char[] array2) {
+    private int sumHalfTicket(char[] array2) {
         int p = 0;
         for(int i = 0; i<array2.length; i++){
             p += array2[i];
