@@ -11,11 +11,11 @@ public class Calculator_40 {
         return instance;
     }
 
-    public void computation(int number){
+    public int computation(int number){
         int defaultValue= 2;
         for(int i=1; i<number; i++  ){
             defaultValue *= 2;
-            System.out.println(defaultValue);
         }
+        return defaultValue;
     }
 }
